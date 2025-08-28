@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/notes")
-@CrossOrigin(/*origins = "http://127.0.0.1:5500"*/origins = "https://notas-eight.vercel.app")
+@CrossOrigin(/*origins = "http://127.0.0.1:5500"*/origins = "https://backend-api-notas.onrender.com")
 public class NoteController {
 
     @Autowired
