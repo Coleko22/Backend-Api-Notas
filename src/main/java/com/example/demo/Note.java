@@ -36,7 +36,4 @@ public class Note {
     public void setContent(String content) {
         this.content = content;
     }
-    
-    public Note() {
-    }
 }

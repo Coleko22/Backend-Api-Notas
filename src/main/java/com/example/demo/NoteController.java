@@ -4,6 +4,7 @@ import com.example.demo.Note;
 import com.example.demo.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 import java.util.Optional;
@@ -47,5 +48,10 @@ public class NoteController {
     @DeleteMapping("/{id}")
     public void deleteNote(@PathVariable Long id) {
         noteService.deleteNote(id);
+    }
+    
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
     }
 }
