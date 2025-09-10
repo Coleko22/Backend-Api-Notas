@@ -21,7 +21,7 @@ COPY src ./src
 RUN ./mvnw clean package -DskipTests
 
 # Etapa de ejecución
-FROM amazoncorretto:17-alpine-jre
+FROM amazoncorretto:17-alpine-jdk
 
 WORKDIR /Backend-Api-Notas
 
